@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class LoopHomeWork {
     public static void main(String[] args) {
-        System.out.println("\nTHIS IS HOMEWORK NR.2");
+        System.out.println("\nTHIS IS HOMEWORK NR.3");
 
         // 1. uzdevums
         System.out.println("1. uzdevums");
