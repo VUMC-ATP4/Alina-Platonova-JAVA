@@ -137,6 +137,7 @@ public class LoopHomeWork {
 
         // 6. uzdevums
         System.out.println("\n6. uzdevums");
+        pin();
 
     }
 
@@ -156,4 +157,25 @@ public class LoopHomeWork {
         System.out.println("Faktoriālā vērtība ir: " + rezultats);
     }
 
+    static void pin() {
+
+        final int pinKods = 7182;
+        int i = 1;
+
+        Scanner skeneris = new Scanner(System.in);
+        while ( i <= 3) {
+            System.out.println("Ievadiet PIN kodu");
+            int enterPin = skeneris.nextInt();
+            if (pinKods == enterPin) {
+                System.out.println("PIN ir pieņemts, laipni lūdzam atpakaļ.");
+                break;
+            } else if ( i == 3) {
+                System.out.println("Atvainojiet, bet jūs esat bloķēts.");
+                break;
+            } else {
+                System.out.println("Nepareizs PIN, mēģiniet vēlreiz.");
+                i++;
+            }
+        }
+    }
 }
